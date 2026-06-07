@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080406">
+<title>Company | SILAGE</title>
+<meta name="description" content="サイレッジ（SILAGE）会社概要。代表 相川優友／2026年創業予定／愛知県名古屋市。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700;800;900&amp;family=Shippori+Mincho+B1:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="./js/scene.js"></script>
+</head>
+<body class="loading">
+
+<div class="bg-field"></div>
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+<div class="read-scrim" id="readScrim"></div>
+<div class="scanline"></div>
+<div class="grain"></div>
+
+<div class="loader" id="loader">
+  <div class="lwrap">
+    <div class="lname" aria-label="SILAGE"><span>S</span><span>I</span><span>L</span><span>A</span><span>G</span><span>E</span></div>
+    <div class="lbar"><i id="lbar"></i></div>
+    <div class="lmeta"><span>AI BUSINESS PARTNER</span><span class="lnum" id="lnum">0</span></div>
+  </div>
+</div>
+
+<div class="scroll-prog" id="prog"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cdot" id="cdot"></div>
+<header class="site-head" id="head">
+  <a href="index.html" class="brand"><span class="dot"></span>SILAGE</a>
+  <nav class="nav">
+    <a href="index.html" class="navlink">HOME</a>
+    <a href="about.html" class="navlink">ABOUT</a>
+    <a href="services.html" class="navlink">SERVICES</a>
+    <a href="works.html" class="navlink">WORKS</a>
+    <a href="company.html" class="navlink current">COMPANY</a>
+    <a href="contact.html" class="cta-pill magnetic">CONTACT<span class="ar">→</span></a>
+  </nav>
+</header>
+<a href="contact.html" class="float-cta magnetic" id="floatCta"><span class="pulse"></span>お問い合わせ</a>
+<main id="top">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal="">COMPANY <span class="idx">— 会社概要</span></div>
+      <h1 data-reveal="">最先端を、<em>現場の当たり前</em>に。</h1>
+      <p class="ph-lead" data-reveal="">その翻訳家であり続ける。サイレッジの情報です。</p>
+    </div>
+  </section>
+
+  <section class="company section-soft" id="company">
+    <div class="wrap">
+      <div class="company-grid">
+        <table class="co-table" data-reveal="">
+          <tbody><tr><th>屋号</th><td>サイレッジ（SILAGE）</td></tr>
+          <tr><th>代表者</th><td>相川 優友</td></tr>
+          <tr><th>創業予定</th><td>2026年</td></tr>
+          <tr><th>所在地</th><td>愛知県名古屋市</td></tr>
+          <tr><th>事業内容</th><td>AI技術を活用した業務自動化システムの開発・提供／Webサイト・LP・デザイン制作／データ分析・経営最適化コンサルティング</td></tr>
+          <tr><th>Contact</th><td><a href="mailto:yamato04090727@gmail.com">yamato04090727@gmail.com</a>　／　<a href="contact.html">お問い合わせフォーム</a></td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section-soft" style="text-align:center">
+    <div class="wrap">
+      <div class="big" data-reveal="" style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(34px,7vw,92px);line-height:1.06;letter-spacing:-.01em">一緒に、<em>仕組み</em>を<br>つくりませんか。</div>
+      <p data-reveal="" style="margin:26px auto 0;max-width:44ch;color:var(--muted);font-weight:400;font-size:clamp(15px,1.7vw,20px)">ご相談・お見積りは無料です。お気軽にどうぞ。</p>
+      <a href="contact.html" class="big-mail magnetic" data-reveal="">無料で相談する<span class="ar">→</span></a>
+      <div class="mailtxt" data-reveal="">yamato04090727@gmail.com</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot">
+    <div class="fb">SILAGE</div>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="works.html">WORKS</a>
+      <a href="company.html">COMPANY</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="lp.html">サービスLP</a>
+    </nav>
+    <div class="cp">© 2026 SILAGE ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="./js/app.js"></script>
+
+
+</body></html>

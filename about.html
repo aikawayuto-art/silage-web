@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080406">
+<title>About | SILAGE</title>
+<meta name="description" content="SILAGEのミッション・ビジョン・バリュー。最先端を現場の当たり前に翻訳するAIパートナー。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700;800;900&amp;family=Shippori+Mincho+B1:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="./js/scene.js"></script>
+</head>
+<body class="loading">
+
+<div class="bg-field"></div>
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+<div class="read-scrim" id="readScrim"></div>
+<div class="scanline"></div>
+<div class="grain"></div>
+
+<div class="loader" id="loader">
+  <div class="lwrap">
+    <div class="lname" aria-label="SILAGE"><span>S</span><span>I</span><span>L</span><span>A</span><span>G</span><span>E</span></div>
+    <div class="lbar"><i id="lbar"></i></div>
+    <div class="lmeta"><span>AI BUSINESS PARTNER</span><span class="lnum" id="lnum">0</span></div>
+  </div>
+</div>
+
+<div class="scroll-prog" id="prog"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cdot" id="cdot"></div>
+<header class="site-head" id="head">
+  <a href="index.html" class="brand"><span class="dot"></span>SILAGE</a>
+  <nav class="nav">
+    <a href="index.html" class="navlink">HOME</a>
+    <a href="about.html" class="navlink current">ABOUT</a>
+    <a href="services.html" class="navlink">SERVICES</a>
+    <a href="works.html" class="navlink">WORKS</a>
+    <a href="company.html" class="navlink">COMPANY</a>
+    <a href="contact.html" class="cta-pill magnetic">CONTACT<span class="ar">→</span></a>
+  </nav>
+</header>
+<a href="contact.html" class="float-cta magnetic" id="floatCta"><span class="pulse"></span>お問い合わせ</a>
+<main id="top">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal="">ABOUT <span class="idx">— 私たちについて</span></div>
+      <h1 data-reveal="">最先端を、<em>現場の当たり前</em>に。</h1>
+      <p class="ph-lead" data-reveal="">マーケティング力とAIで、<br>投じた一円・一時間を成果に変える。<br>サイレッジは、技術を“現場で回る仕組み”に<br>翻訳するAIパートナーです。</p>
+    </div>
+  </section>
+
+  <section class="mission section-soft" id="mission">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal="">MISSION</div>
+      <div class="big" data-reveal="" style="margin-top:24px">投じた一円・一時間を、<br><em>成果</em>に変える。</div>
+      <div class="mission-grid">
+        <p data-reveal="">マーケティング力と、AIによるシステム・クリエイティブで、企業の無駄なコスト——時間とお金——をなくす。<br>投じた一円・一時間が、見合うだけの成果に<br>変わる。その仕組みを、企業に実装します。</p>
+        <div class="sig" data-reveal="">SILAGE — MISSION STATEMENT</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="concept" id="vision">
+    <div class="wrap concept-inner">
+      <div class="eyebrow" data-reveal="">VISION</div>
+      <h2 class="concept-title" data-reveal="">がんばった分だけ、<br><em>成果</em>が出る。</h2>
+      <p class="concept-lead" data-reveal="">そんな“当たり前”を、すべての組織に。<br>努力が、正しく報われる組織を<br>世の中に増やす。</p>
+    </div>
+  </section>
+
+  <section class="values section-soft" id="values">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow" data-reveal="">VALUES</div>
+          <h2 class="sec-title" data-reveal="" style="margin-top:20px">迷ったら、<em>これ</em>で決める。</h2>
+        </div>
+        <p class="lede" data-reveal="">意思決定の基準は、4つ。すべての提案と実装は、この価値観に貫かれています。</p>
+      </div>
+      <div class="val-grid">
+        <article class="val" data-reveal=""><div class="val-no">01</div><div class="val-en">STRUCTURE</div><h3>構造で捉える</h3><p>現象ではなく、仕組みを見る。<br>対症療法より、根本原因に手を入れる。</p></article>
+        <article class="val" data-reveal=""><div class="val-no">02</div><div class="val-en">EVIDENCE</div><h3>数字で語る</h3><p>“たぶん効く”を許さない。<br>データと採算で、意思決定する。</p></article>
+        <article class="val" data-reveal=""><div class="val-no">03</div><div class="val-en">LEVERAGE</div><h3>レバレッジに張る</h3><p>短期の小さな成果より、<br>長期で効き続ける一手を選ぶ。</p></article>
+        <article class="val" data-reveal=""><div class="val-no">04</div><div class="val-en">BE CRITICAL</div><h3>批判的であれ</h3><p>前提・通説・自分の判断を、疑い続ける。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section-soft" style="text-align:center">
+    <div class="wrap">
+      <div class="big" data-reveal="" style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(34px,7vw,92px);line-height:1.06;letter-spacing:-.01em">私たちと、<br><em>当たり前</em>を変える。</div>
+      <p data-reveal="" style="margin:26px auto 0;max-width:44ch;color:var(--muted);font-weight:400;font-size:clamp(15px,1.7vw,20px)">ミッションに共感いただけたら、まずは気軽にお話ししましょう。</p>
+      <a href="contact.html" class="big-mail magnetic" data-reveal="">無料で相談する<span class="ar">→</span></a>
+      <div class="mailtxt" data-reveal="">yamato04090727@gmail.com</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot">
+    <div class="fb">SILAGE</div>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="works.html">WORKS</a>
+      <a href="company.html">COMPANY</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="lp.html">サービスLP</a>
+    </nav>
+    <div class="cp">© 2026 SILAGE ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="./js/app.js"></script>
+
+
+</body></html>

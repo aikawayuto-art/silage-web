@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080406">
+<title>Works | SILAGE</title>
+<meta name="description" content="SILAGEの導入事例・代表的なユースケースと業務インパクト。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700;800;900&amp;family=Shippori+Mincho+B1:wght@500;600;700;800&amp;family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="./js/scene.js"></script>
+</head>
+<body class="loading">
+
+<div class="bg-field"></div>
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+<div class="read-scrim" id="readScrim"></div>
+<div class="scanline"></div>
+<div class="grain"></div>
+
+<div class="loader" id="loader">
+  <div class="lwrap">
+    <div class="lname" aria-label="SILAGE"><span>S</span><span>I</span><span>L</span><span>A</span><span>G</span><span>E</span></div>
+    <div class="lbar"><i id="lbar"></i></div>
+    <div class="lmeta"><span>AI BUSINESS PARTNER</span><span class="lnum" id="lnum">0</span></div>
+  </div>
+</div>
+
+<div class="scroll-prog" id="prog"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cdot" id="cdot"></div>
+<header class="site-head" id="head">
+  <a href="index.html" class="brand"><span class="dot"></span>SILAGE</a>
+  <nav class="nav">
+    <a href="index.html" class="navlink">HOME</a>
+    <a href="about.html" class="navlink">ABOUT</a>
+    <a href="services.html" class="navlink">SERVICES</a>
+    <a href="works.html" class="navlink current">WORKS</a>
+    <a href="company.html" class="navlink">COMPANY</a>
+    <a href="contact.html" class="cta-pill magnetic">CONTACT<span class="ar">→</span></a>
+  </nav>
+</header>
+<a href="contact.html" class="float-cta magnetic" id="floatCta"><span class="pulse"></span>お問い合わせ</a>
+<main id="top">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow" data-reveal="">WORKS <span class="idx">— 事例</span></div>
+      <h1 data-reveal="">“やってみた”で<br>終わらせない。</h1>
+      <p class="ph-lead" data-reveal="">業種ごとに“効く一点”は違う。<br>代表的な導入パターンと、<br>その業務インパクトをご紹介します。</p>
+    </div>
+  </section>
+
+  <section class="section-soft" id="works">
+    <div class="wrap">
+      <div class="work-grid">
+        <article class="work" data-reveal="">
+          <div class="wk-tag">CASE 01 — 美容・サロン</div>
+          <h3>受付と予約を、<br>AIに任せる。</h3>
+          <div class="wk-row"><b>課題</b>電話対応に追われ施術に集中できない</div>
+          <div class="wk-row"><b>施策</b>AI受付＋自動予約＋リマインド</div>
+          <div class="wk-metric"><span>−</span>68<span>%</span></div>
+          <div class="wk-row" style="margin-top:-6px"><b>結果</b>電話対応時間を削減・取りこぼし減</div>
+        </article>
+        <article class="work" data-reveal="">
+          <div class="wk-tag">CASE 02 — EC・小売</div>
+          <h3>散らばった数字を、<br>一枚に束ねる。</h3>
+          <div class="wk-row"><b>課題</b>データが分断され意思決定が遅い</div>
+          <div class="wk-row"><b>施策</b>データ統合・可視化ダッシュボード</div>
+          <div class="wk-metric">70<span>%</span></div>
+          <div class="wk-row" style="margin-top:-6px"><b>結果</b>定型レポート作業を自動化</div>
+        </article>
+        <article class="work" data-reveal="">
+          <div class="wk-tag">CASE 03 — 士業・サービス</div>
+          <h3>制作も運用も、<br>三分の一の速さで。</h3>
+          <div class="wk-row"><b>課題</b>制作が遅く、問い合わせ対応も逼迫</div>
+          <div class="wk-row"><b>施策</b>AI制作＋一次対応の自動化</div>
+          <div class="wk-metric">1/3</div>
+          <div class="wk-row" style="margin-top:-6px"><b>結果</b>制作期間を短縮・対応を仕組み化</div>
+        </article>
+      </div>
+      <p class="disclaimer" data-reveal="" style="margin-top:30px">※掲載の事例は、代表的な想定ユースケースに基づくモデルケースです（2026年創業予定のため）。実際の効果は業種・運用体制により異なります。</p>
+    </div>
+  </section>
+
+  <section class="contact section-soft" style="text-align:center">
+    <div class="wrap">
+      <div class="big" data-reveal="" style="font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(34px,7vw,92px);line-height:1.06;letter-spacing:-.01em">あなたの現場でも、<br><em>同じこと</em>を。</div>
+      <p data-reveal="" style="margin:26px auto 0;max-width:44ch;color:var(--muted);font-weight:400;font-size:clamp(15px,1.7vw,20px)">業種・課題を伺い、効く一点をご提案します。ご相談は無料です。</p>
+      <a href="contact.html" class="big-mail magnetic" data-reveal="">無料で相談する<span class="ar">→</span></a>
+      <div class="mailtxt" data-reveal="">yamato04090727@gmail.com</div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="foot">
+    <div class="fb">SILAGE</div>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="works.html">WORKS</a>
+      <a href="company.html">COMPANY</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="lp.html">サービスLP</a>
+    </nav>
+    <div class="cp">© 2026 SILAGE ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="./js/app.js"></script>
+
+
+</body></html>
